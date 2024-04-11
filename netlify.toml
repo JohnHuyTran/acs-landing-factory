@@ -1,6 +1,6 @@
 [build]
-    comand = "npm run build"
-    publish = "/dist"
+    comand = "ng build --prod"
+    publish = "dist/angular-landing-page"
     base = "/"
 
 [[redirects]]
