@@ -145,13 +145,43 @@
 
         <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
           Thông tin giấy tờ liên quan 
-        </h6>
+        </h6> 
         <div class="flex flex-wrap">
+          <div class="w-full lg:w-12/12 px-4">
+            <div class="relative w-full mb-3">
+              <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
+                Ảnh chân dung
+              </label>
+              <div class="card-body d-flex justify-content-center">
+                <img src="./assets/img/portrait.png" class="img-fluid img-thumbnail im m-auto cursor-pointer w-64 h-48" id="FacePic"
+                  alt="" />
+              </div>
+              <div class="card-footer d-flex justify-content-around .bg-white">
+                <div class="input-group mb-3">
+                  <div class="custom-file">
+                    <input type="file" class="form-control-file" id="input-file" />
+                    <label class="custom-file-label" for="input-file">Chọn ảnh</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="w-full lg:w-12/12 px-4">
             <div class="relative w-full mb-3">
               <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                 Ảnh mặt trước CCCD
               </label>
+              <div class="card-body d-flex justify-content-center">
+                <img src="https://cdnimgen.vietnamplus.vn/t620/uploaded/wbxx/2021_02_24/chip_based_id_cards.jpg" class="img-fluid img-thumbnail im m-auto cursor-pointer w-64 h-48" id="FrontIdPic" alt="" />
+              </div>
+              <div class="card-footer d-flex justify-content-around .bg-white">
+                <div class="input-group mb-3">
+                  <div class="custom-file">
+                    <input type="file" class="form-control-file" id="input-file" />
+                    <label class="custom-file-label" for="input-file">Chọn ảnh</label>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="w-full lg:w-4/12 px-4">
@@ -159,6 +189,18 @@
               <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                 Ảnh mặt sau CCCD
               </label>
+              <div class="card-body d-flex justify-content-center">
+                <img src="https://cdnimgen.vietnamplus.vn/t620/uploaded/wbxx/2021_02_24/chip_based_id_card_back.jpg" class="img-fluid img-thumbnail im m-auto cursor-pointer w-64 h-48" id="BackIdPic" alt="" />
+              </div>
+              <div class="card-footer d-flex justify-content-around .bg-white">
+                <div class="input-group mb-3 ">
+                  <div class="custom-file">
+                    <input type="file" onChange={this.fileSelectedHandlerTwo} class="form-control-file" id="input-file-two" />
+                    <label class="custom-file-label" for="input-file-two">Chọn ảnh</label>
+                  </div>
+                </div>
+              
+              </div>
             </div>
           </div>
         </div>
